@@ -1,0 +1,1287 @@
+# This is the network config written by 'subiquity'
+network:
+  version: 2
+  ethernets:
+    enp4s0f0:
+      addresses: 
+        - 198.51.100.42/24 # Gateway server external IP address 
+        - 198.51.100.4/24 # Honeypot Service
+        - 198.51.100.12/24 # Another Honeypot Service
+      gateway4: 198.51.100.1
+      dhcp4: false
+      nameservers:
+        addresses: [8.8.8.8, 8.8.4.4]
+    enp7s0f0:
+      dhcp4: false
+      addresses: [192.168.1.1/30]
+  vlans:
+    vlan.2:
+      id: 2
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.2.1/30]
+    vlan.3:
+      id: 3
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.3.1/30]
+    vlan.4:
+      id: 4
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.4.1/30]
+    vlan.5:
+      id: 5
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.5.1/30]
+    vlan.6:
+      id: 6
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.6.1/30]
+    vlan.7:
+      id: 7
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.7.1/30]
+    vlan.8:
+      id: 8
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.8.1/30]
+    vlan.9:
+      id: 9
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.9.1/30]
+    vlan.10:
+      id: 10
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.10.1/30]
+    vlan.11:
+      id: 11
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.11.1/30]
+    vlan.12:
+      id: 12
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.12.1/30]
+    vlan.13:
+      id: 13
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.13.1/30]
+    vlan.14:
+      id: 14
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.14.1/30]
+    vlan.15:
+      id: 15
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.15.1/30]
+    vlan.16:
+      id: 16
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.16.1/30]
+    vlan.17:
+      id: 17
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.17.1/30]
+    vlan.18:
+      id: 18
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.18.1/30]
+    vlan.19:
+      id: 19
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.19.1/30]
+    vlan.20:
+      id: 20
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.20.1/30]
+    vlan.21:
+      id: 21
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.21.1/30]
+    vlan.22:
+      id: 22
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.22.1/30]
+    vlan.23:
+      id: 23
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.23.1/30]
+    vlan.24:
+      id: 24
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.24.1/30]
+    vlan.25:
+      id: 25
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.25.1/30]
+    vlan.26:
+      id: 26
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.26.1/30]
+    vlan.27:
+      id: 27
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.27.1/30]
+    vlan.28:
+      id: 28
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.28.1/30]
+    vlan.29:
+      id: 29
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.29.1/30]
+    vlan.30:
+      id: 30
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.30.1/30]
+    vlan.31:
+      id: 31
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.31.1/30]
+    vlan.32:
+      id: 32
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.32.1/30]
+    vlan.33:
+      id: 33
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.33.1/30]
+    vlan.34:
+      id: 34
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.34.1/30]
+    vlan.35:
+      id: 35
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.35.1/30]
+    vlan.36:
+      id: 36
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.36.1/30]
+    vlan.37:
+      id: 37
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.37.1/30]
+    vlan.38:
+      id: 38
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.38.1/30]
+    vlan.39:
+      id: 39
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.39.1/30]
+    vlan.40:
+      id: 40
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.40.1/30]
+    vlan.41:
+      id: 41
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.41.1/30]
+    vlan.42:
+      id: 42
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.42.1/30]
+    vlan.43:
+      id: 43
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.43.1/30]
+    vlan.44:
+      id: 44
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.44.1/30]
+    vlan.45:
+      id: 45
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.45.1/30]
+    vlan.46:
+      id: 46
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.46.1/30]
+    vlan.47:
+      id: 47
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.47.1/30]
+    vlan.48:
+      id: 48
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.48.1/30]
+    vlan.49:
+      id: 49
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.49.1/30]
+    vlan.50:
+      id: 50
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.50.1/30]
+    vlan.51:
+      id: 51
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.51.1/30]
+    vlan.52:
+      id: 52
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.52.1/30]
+    vlan.53:
+      id: 53
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.53.1/30]
+    vlan.54:
+      id: 54
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.54.1/30]
+    vlan.55:
+      id: 55
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.55.1/30]
+    vlan.56:
+      id: 56
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.56.1/30]
+    vlan.57:
+      id: 57
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.57.1/30]
+    vlan.58:
+      id: 58
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.58.1/30]
+    vlan.59:
+      id: 59
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.59.1/30]
+    vlan.60:
+      id: 60
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.60.1/30]
+    vlan.61:
+      id: 61
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.61.1/30]
+    vlan.62:
+      id: 62
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.62.1/30]
+    vlan.63:
+      id: 63
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.63.1/30]
+    vlan.64:
+      id: 64
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.64.1/30]
+    vlan.65:
+      id: 65
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.65.1/30]
+    vlan.66:
+      id: 66
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.66.1/30]
+    vlan.67:
+      id: 67
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.67.1/30]
+    vlan.68:
+      id: 68
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.68.1/30]
+    vlan.69:
+      id: 69
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.69.1/30]
+    vlan.70:
+      id: 70
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.70.1/30]
+    vlan.71:
+      id: 71
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.71.1/30]
+    vlan.72:
+      id: 72
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.72.1/30]
+    vlan.73:
+      id: 73
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.73.1/30]
+    vlan.74:
+      id: 74
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.74.1/30]
+    vlan.75:
+      id: 75
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.75.1/30]
+    vlan.76:
+      id: 76
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.76.1/30]
+    vlan.77:
+      id: 77
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.77.1/30]
+    vlan.78:
+      id: 78
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.78.1/30]
+    vlan.79:
+      id: 79
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.79.1/30]
+    vlan.80:
+      id: 80
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.80.1/30]
+    vlan.81:
+      id: 81
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.81.1/30]
+    vlan.82:
+      id: 82
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.82.1/30]
+    vlan.83:
+      id: 83
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.83.1/30]
+    vlan.84:
+      id: 84
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.84.1/30]
+    vlan.85:
+      id: 85
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.85.1/30]
+    vlan.86:
+      id: 86
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.86.1/30]
+    vlan.87:
+      id: 87
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.87.1/30]
+    vlan.88:
+      id: 88
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.88.1/30]
+    vlan.89:
+      id: 89
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.89.1/30]
+    vlan.90:
+      id: 90
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.90.1/30]
+    vlan.91:
+      id: 91
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.91.1/30]
+    vlan.92:
+      id: 92
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.92.1/30]
+    vlan.93:
+      id: 93
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.93.1/30]
+    vlan.94:
+      id: 94
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.94.1/30]
+    vlan.95:
+      id: 95
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.95.1/30]
+    vlan.96:
+      id: 96
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.96.1/30]
+    vlan.97:
+      id: 97
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.97.1/30]
+    vlan.98:
+      id: 98
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.98.1/30]
+    vlan.99:
+      id: 99
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.99.1/30]
+    vlan.100:
+      id: 100
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.100.1/30]
+    vlan.101:
+      id: 101
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.101.1/30]
+    vlan.102:
+      id: 102
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.102.1/30]
+    vlan.103:
+      id: 103
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.103.1/30]
+    vlan.104:
+      id: 104
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.104.1/30]
+    vlan.105:
+      id: 105
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.105.1/30]
+    vlan.106:
+      id: 106
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.106.1/30]
+    vlan.107:
+      id: 107
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.107.1/30]
+    vlan.108:
+      id: 108
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.108.1/30]
+    vlan.109:
+      id: 109
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.109.1/30]
+    vlan.110:
+      id: 110
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.110.1/30]
+    vlan.111:
+      id: 111
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.111.1/30]
+    vlan.112:
+      id: 112
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.112.1/30]
+    vlan.113:
+      id: 113
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.113.1/30]
+    vlan.114:
+      id: 114
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.114.1/30]
+    vlan.115:
+      id: 115
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.115.1/30]
+    vlan.116:
+      id: 116
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.116.1/30]
+    vlan.117:
+      id: 117
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.117.1/30]
+    vlan.118:
+      id: 118
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.118.1/30]
+    vlan.119:
+      id: 119
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.119.1/30]
+    vlan.120:
+      id: 120
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.120.1/30]
+    vlan.121:
+      id: 121
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.121.1/30]
+    vlan.122:
+      id: 122
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.122.1/30]
+    vlan.123:
+      id: 123
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.123.1/30]
+    vlan.124:
+      id: 124
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.124.1/30]
+    vlan.125:
+      id: 125
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.125.1/30]
+    vlan.126:
+      id: 126
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.126.1/30]
+    vlan.127:
+      id: 127
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.127.1/30]
+    vlan.128:
+      id: 128
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.128.1/30]
+    vlan.129:
+      id: 129
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.129.1/30]
+    vlan.130:
+      id: 130
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.130.1/30]
+    vlan.131:
+      id: 131
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.131.1/30]
+    vlan.132:
+      id: 132
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.132.1/30]
+    vlan.133:
+      id: 133
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.133.1/30]
+    vlan.134:
+      id: 134
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.134.1/30]
+    vlan.135:
+      id: 135
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.135.1/30]
+    vlan.136:
+      id: 136
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.136.1/30]
+    vlan.137:
+      id: 137
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.137.1/30]
+    vlan.138:
+      id: 138
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.138.1/30]
+    vlan.139:
+      id: 139
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.139.1/30]
+    vlan.140:
+      id: 140
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.140.1/30]
+    vlan.141:
+      id: 141
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.141.1/30]
+    vlan.142:
+      id: 142
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.142.1/30]
+    vlan.143:
+      id: 143
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.143.1/30]
+    vlan.144:
+      id: 144
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.144.1/30]
+    vlan.145:
+      id: 145
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.145.1/30]
+    vlan.146:
+      id: 146
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.146.1/30]
+    vlan.147:
+      id: 147
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.147.1/30]
+    vlan.148:
+      id: 148
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.148.1/30]
+    vlan.149:
+      id: 149
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.149.1/30]
+    vlan.150:
+      id: 150
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.150.1/30]
+    vlan.151:
+      id: 151
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.151.1/30]
+    vlan.152:
+      id: 152
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.152.1/30]
+    vlan.153:
+      id: 153
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.153.1/30]
+    vlan.154:
+      id: 154
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.154.1/30]
+    vlan.155:
+      id: 155
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.155.1/30]
+    vlan.156:
+      id: 156
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.156.1/30]
+    vlan.157:
+      id: 157
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.157.1/30]
+    vlan.158:
+      id: 158
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.158.1/30]
+    vlan.159:
+      id: 159
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.159.1/30]
+    vlan.160:
+      id: 160
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.160.1/30]
+    vlan.161:
+      id: 161
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.161.1/30]
+    vlan.162:
+      id: 162
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.162.1/30]
+    vlan.163:
+      id: 163
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.163.1/30]
+    vlan.164:
+      id: 164
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.164.1/30]
+    vlan.165:
+      id: 165
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.165.1/30]
+    vlan.166:
+      id: 166
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.166.1/30]
+    vlan.167:
+      id: 167
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.167.1/30]
+    vlan.168:
+      id: 168
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.168.1/30]
+    vlan.169:
+      id: 169
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.169.1/30]
+    vlan.170:
+      id: 170
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.170.1/30]
+    vlan.171:
+      id: 171
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.171.1/30]
+    vlan.172:
+      id: 172
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.172.1/30]
+    vlan.173:
+      id: 173
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.173.1/30]
+    vlan.174:
+      id: 174
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.174.1/30]
+    vlan.175:
+      id: 175
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.175.1/30]
+    vlan.176:
+      id: 176
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.176.1/30]
+    vlan.177:
+      id: 177
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.177.1/30]
+    vlan.178:
+      id: 178
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.178.1/30]
+    vlan.179:
+      id: 179
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.179.1/30]
+    vlan.180:
+      id: 180
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.180.1/30]
+    vlan.181:
+      id: 181
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.181.1/30]
+    vlan.182:
+      id: 182
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.182.1/30]
+    vlan.183:
+      id: 183
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.183.1/30]
+    vlan.184:
+      id: 184
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.184.1/30]
+    vlan.185:
+      id: 185
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.185.1/30]
+    vlan.186:
+      id: 186
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.186.1/30]
+    vlan.187:
+      id: 187
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.187.1/30]
+    vlan.188:
+      id: 188
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.188.1/30]
+    vlan.189:
+      id: 189
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.189.1/30]
+    vlan.190:
+      id: 190
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.190.1/30]
+    vlan.191:
+      id: 191
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.191.1/30]
+    vlan.192:
+      id: 192
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.192.1/30]
+    vlan.193:
+      id: 193
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.193.1/30]
+    vlan.194:
+      id: 194
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.194.1/30]
+    vlan.195:
+      id: 195
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.195.1/30]
+    vlan.196:
+      id: 196
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.196.1/30]
+    vlan.197:
+      id: 197
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.197.1/30]
+    vlan.198:
+      id: 198
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.198.1/30]
+    vlan.199:
+      id: 199
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.199.1/30]
+    vlan.200:
+      id: 200
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.200.1/30]
+    vlan.201:
+      id: 201
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.201.1/30]
+    vlan.202:
+      id: 202
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.202.1/30]
+    vlan.203:
+      id: 203
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.203.1/30]
+    vlan.204:
+      id: 204
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.204.1/30]
+    vlan.205:
+      id: 205
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.205.1/30]
+    vlan.206:
+      id: 206
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.206.1/30]
+    vlan.207:
+      id: 207
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.207.1/30]
+    vlan.208:
+      id: 208
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.208.1/30]
+    vlan.209:
+      id: 209
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.209.1/30]
+    vlan.210:
+      id: 210
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.210.1/30]
+    vlan.211:
+      id: 211
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.211.1/30]
+    vlan.212:
+      id: 212
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.212.1/30]
+    vlan.213:
+      id: 213
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.213.1/30]
+    vlan.214:
+      id: 214
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.214.1/30]
+    vlan.215:
+      id: 215
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.215.1/30]
+    vlan.216:
+      id: 216
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.216.1/30]
+    vlan.217:
+      id: 217
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.217.1/30]
+    vlan.218:
+      id: 218
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.218.1/30]
+    vlan.219:
+      id: 219
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.219.1/30]
+    vlan.220:
+      id: 220
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.220.1/30]
+    vlan.221:
+      id: 221
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.221.1/30]
+    vlan.222:
+      id: 222
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.222.1/30]
+    vlan.223:
+      id: 223
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.223.1/30]
+    vlan.224:
+      id: 224
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.224.1/30]
+    vlan.225:
+      id: 225
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.225.1/30]
+    vlan.226:
+      id: 226
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.226.1/30]
+    vlan.227:
+      id: 227
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.227.1/30]
+    vlan.228:
+      id: 228
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.228.1/30]
+    vlan.229:
+      id: 229
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.229.1/30]
+    vlan.230:
+      id: 230
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.230.1/30]
+    vlan.231:
+      id: 231
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.231.1/30]
+    vlan.232:
+      id: 232
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.232.1/30]
+    vlan.233:
+      id: 233
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.233.1/30]
+    vlan.234:
+      id: 234
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.234.1/30]
+    vlan.235:
+      id: 235
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.235.1/30]
+    vlan.236:
+      id: 236
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.236.1/30]
+    vlan.237:
+      id: 237
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.237.1/30]
+    vlan.238:
+      id: 238
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.238.1/30]
+    vlan.239:
+      id: 239
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.239.1/30]
+    vlan.240:
+      id: 240
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.240.1/30]
+    vlan.241:
+      id: 241
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.241.1/30]
+    vlan.242:
+      id: 242
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.242.1/30]
+    vlan.243:
+      id: 243
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.243.1/30]
+    vlan.244:
+      id: 244
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.244.1/30]
+    vlan.245:
+      id: 245
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.245.1/30]
+    vlan.246:
+      id: 246
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.246.1/30]
+    vlan.247:
+      id: 247
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.247.1/30]
+    vlan.248:
+      id: 248
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.248.1/30]
+    vlan.249:
+      id: 249
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.249.1/30]
+    vlan.250:
+      id: 250
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.250.1/30]
+    vlan.251:
+      id: 251
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.251.1/30]
+    vlan.252:
+      id: 252
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.252.1/30]
+    vlan.253:
+      id: 253
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.253.1/30]
+    vlan.254:
+      id: 254
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.254.1/30]
+    vlan.255:
+      id: 255
+      dhcp4: false
+      link: enp7s0f0
+      addresses: [192.168.255.1/30]
