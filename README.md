@@ -416,6 +416,8 @@ packetbeat.interfaces.buffer_size_mb: 150
 output.elasticsearch.pipeline: geoip-info
 ```
 
+Unfortunately, we cannot define multiple network interfaces in Packetbeat similar as in Suricata without restorting to the `any` interface, which captures *all* network devices including the VLANs. Therefore, we limit ourselves here to the internet-connected network interface.
+
 Now, we can start Packetbeat in the same fashion as Filebeat:
 ```bash
 sudo filebeat setup
