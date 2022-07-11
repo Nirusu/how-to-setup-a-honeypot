@@ -260,9 +260,9 @@ Again, if the honeypot is reachable under a domain or another DNS name, `--nosni
 When running **PolarProxy in combination with TShark**, it can make sense to exclude the TLS port from the TShark capture to avoid bloated PCAP files containing redunant encrypted traffic. This can be achieved with a capture filter in TShark:
 
 ```bash
-tshark -i vlan.XX -w /mnt/data/pcaps/vlanXX.pcap -f "not ((src net 192.168.XX.1 and src port YY) or (dst net 192.168.XX.1 and dst port YY))"
+tshark -i vlan.XX -w /mnt/data/pcaps/vlanXX.pcap -f "not ((src net 192.168.XX.1) and (dst net 192.168.XX.2 and dst port YZ)) or ((src net 192.168.XX.2 and src port YZ) and (dst net 192.168.XX.1))"
 ```
-
+Here, YZ is the last port defined in `-p` for PolarProxy, which is the port from the VM PolarProxy connects to. For the examples above, it is ZZ for the termination mode and YY for the reverse proxy mode.
 
 ## Suricata (IDS)
 In order to be alerted of incoming attacks, it makes sense to install an IDS that monitors the network traffic for known attacks. For this case, we use [Suricata](https://suricata.readthedocs.io/en/latest/install.html#binary-packages), which can also monitor TLS traffic when combined with PolarProxy.
