@@ -526,3 +526,18 @@ POST /_security/api_key
 }
 ```
 
+### Filtering Beats traffic from the PCAPs
+When the Beats inside the VM communicate with the ElasticSearch server on the Gateway Server, the traffic is passed through the same network interface we are capturing. Since the Beats, especially Metricbeat, can produce quite a lot of data bloating up the PCAPs, we might not want to include it in the packet capture data we collect with TShark. 
+
+Using the same suggested filtering approach as above, we can instruct TShark to filter out any data going from or to ElasticSearch:
+```bash
+tshark -i vlan.XX -w /mnt/data/pcaps/vlanXX.pcap -f "not ((src net 192.168.XX.1 and src port 9200) or (dst net 192.168.XX.1 and dst port 9200))"
+```
+
+When already using the TLS or any other capture filter, we append the above capture filter to the existing one with an `and`. As an example with the suggested TLS filter:
+
+```bash
+tshark -i vlan.XX -w /mnt/data/pcaps/vlanXX.pcap -f "not ((src net 192.168.XX.1) and (dst net 192.168.XX.2 and dst port YZ)) or ((src net 192.168.XX.2 and src port YZ) and (dst net 192.168.XX.1)) and not ((src net 192.168.XX.1 and src port 9200) or (dst net 192.168.XX.1 and dst port 9200))"
+```
+
+The letter conventions are the same as the previous examples in the packet capturing section, with XX being the VLAN ID and YZ the port from the VM PolarProxy connects to in either termination proxy mode (ZZ) or reverse proxy mode (YY).
